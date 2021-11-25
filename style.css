@@ -91,6 +91,7 @@ button:hover {
   transition: 0.2s ease-in;
   cursor: pointer;
 }
+
 .revenue {
   display: flex;
   justify-content: space-between;
@@ -112,6 +113,11 @@ button:hover {
   display: flex;
   justify-content: space-around;
 }
+
+.hidden {
+  display: none;
+}
+
 .result-box {
   flex: 1 1 0;
   height: 35px;

@@ -13,6 +13,16 @@ const netMarginResult = document.querySelector(".net-marg-result");
 const salesCommResult = document.querySelector(".sc-result");
 const pmFeeResult = document.querySelector(".pm-fee-result");
 const resetButton = document.querySelector(".reset");
+const resultContainer = document.querySelector(".result-container");
+
+const showResults = function (event) {
+  //   event.preventDefault();
+  resultContainer.classList.remove("hidden");
+};
+
+const resetResults = function (event) {
+  resultContainer.classList.add("hidden");
+};
 
 calcButton.addEventListener("click", function (event) {
   event.preventDefault();
@@ -34,4 +44,6 @@ calcButton.addEventListener("click", function (event) {
   netMarginResult.textContent = `${(netMargin * 100).toFixed(2)}`;
   salesCommResult.textContent = `$${salesCommission.toFixed(2)}`;
   pmFeeResult.textContent = `$${pmFee.toFixed(2)}`;
+
+  showResults();
 });
