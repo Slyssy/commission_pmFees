@@ -15,11 +15,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #1d3557;
 }
 
 .page_container {
   width: 428px;
-  height: 100vh;
   margin: auto;
   background-color: #1d3557;
   padding: 3rem 1.5rem;
@@ -41,7 +41,7 @@ body {
 }
 
 .calc-box {
-  background-color: #a8dadc;
+  background-color: rgb(167, 218, 220);
   width: 90%;
   margin: 3rem auto;
   padding: 1.5rem;
@@ -129,16 +129,17 @@ button:hover {
 .result-container {
   margin: 0;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #1d3557;
   /* opacity: 90%; */
   backdrop-filter: blur(6px);
   position: absolute;
   width: 403px;
-  top: 37%;
+  top: 30%;
   left: 3%;
   border-radius: 15px;
   /* transform: translateY(-50%); */
 }
+
 .result-box {
   flex: 1 1 0;
   height: 35px;
@@ -150,6 +151,14 @@ button:hover {
   background-color: #536570;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.calc-box-result {
+  background-color: rgb(167, 218, 220);
+  width: 90%;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  border-radius: 10px;
 }
 
 .gross-profit {
