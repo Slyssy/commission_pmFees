@@ -18,7 +18,7 @@ body {
   background-color: #1d3557;
 }
 
-.page_container {
+.page-container {
   width: 428px;
   margin: auto;
   background-color: #1d3557;
@@ -30,6 +30,7 @@ body {
   font-size: 26px;
   color: #f1faee;
   text-align: center;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -130,14 +131,12 @@ button:hover {
   margin: 0;
   padding: 1rem;
   background-color: #1d3557;
-  /* opacity: 90%; */
   backdrop-filter: blur(6px);
   position: absolute;
   width: 403px;
-  top: 22%;
-  left: 3%;
+  top: 10%;
+  left: 2%;
   border-radius: 15px;
-  /* transform: translateY(-50%); */
 }
 
 .result-box {
@@ -222,4 +221,37 @@ button:hover {
 }
 .pm-fee label {
   padding-top: 0.5rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .hidden {
+    display: block;
+  }
+
+  .page-container {
+    display: flex;
+    width: 1000px;
+    max-width: 1200px;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10%;
+  }
+
+  .financial-entry {
+    margin: 0;
+    padding: 0;
+    flex: 0 1 50%;
+  }
+  .result-container {
+    position: static;
+    margin: 0;
+    padding: 0;
+    flex: 0 1 50%;
+    /* width: 100%; */
+  }
+
+  .calc-box {
+    width: 100%;
+  }
 }
