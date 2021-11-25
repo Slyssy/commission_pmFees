@@ -11,11 +11,19 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .page_container {
   width: 428px;
-  margin: 0 auto;
+  height: 100vh;
+  margin: auto;
   background-color: #1d3557;
   padding: 3rem 1.5rem;
+  position: relative;
 }
 
 .page-title {
@@ -118,6 +126,19 @@ button:hover {
   display: none;
 }
 
+.result-container {
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* opacity: 90%; */
+  backdrop-filter: blur(6px);
+  position: absolute;
+  width: 403px;
+  top: 37%;
+  left: 3%;
+  border-radius: 15px;
+  /* transform: translateY(-50%); */
+}
 .result-box {
   flex: 1 1 0;
   height: 35px;

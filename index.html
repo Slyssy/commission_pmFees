@@ -14,41 +14,44 @@
   </head>
   <body>
     <div class="page_container">
-      <h1 class="page-title">Total Security Solutions</h1>
-      <h2 class="page-subtitle">Commission and PM Fee Calculator</h2>
-      <div class="calc-box">
-        <h2>Enter Project Financials</h2>
-        <form>
-          <div class="revenue">
-            <label for="revenue">Project Revenue: </label>
-            <input
-              type="text"
-              id="revenue"
-              name="revenue"
-              placeholder="ex. 18465"
-            />
-          </div>
-          <div class="expenses">
-            <label for="expenses">Total Expenses: </label>
-            <input
-              type="text"
-              id="expenses"
-              name="expenses"
-              placeholder="ex. 10875"
-            />
-          </div>
-          <div class="oh-rate">
-            <label for="oh-rate">O.H. Rate: </label>
-            <input
-              type="text"
-              id="oh-rate"
-              name="oh-rate"
-              placeholder="ex. 25"
-            />
-          </div>
-        </form>
+      <div class="financial-entry">
+        <h1 class="page-title">Total Security Solutions</h1>
+        <h2 class="page-subtitle">Commission and PM Fee Calculator</h2>
+        <div class="calc-box">
+          <h2>Enter Project Financials</h2>
+          <form>
+            <div class="revenue">
+              <label for="revenue">Project Revenue: </label>
+              <input
+                type="text"
+                id="revenue"
+                name="revenue"
+                placeholder="ex. 18465"
+              />
+            </div>
+            <div class="expenses">
+              <label for="expenses">Total Expenses: </label>
+              <input
+                type="text"
+                id="expenses"
+                name="expenses"
+                placeholder="ex. 10875"
+              />
+            </div>
+            <div class="oh-rate">
+              <label for="oh-rate">O.H. Rate: </label>
+              <input
+                type="text"
+                id="oh-rate"
+                name="oh-rate"
+                placeholder="ex. 25"
+              />
+            </div>
+          </form>
+        </div>
+        <button class="calculate">Calculate</button>
       </div>
-      <button class="calculate">Calculate</button>
+
       <div class="result-container hidden">
         <div class="calc-box">
           <div class="gross-profit">
