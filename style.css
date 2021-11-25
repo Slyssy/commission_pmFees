@@ -1,0 +1,189 @@
+/* # Colors: Background: #1d3557 Box1: #457b9d Box2: #a8dadc PrimaryText: #f1faee AlertText: #e63946*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.page_container {
+  width: 428px;
+  margin: 0 auto;
+  background-color: #1d3557;
+  padding: 3rem 1.5rem;
+}
+
+.page-title {
+  font-size: 26px;
+  color: #f1faee;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.page-subtitle {
+  font-size: 18px;
+  font-style: italic;
+  color: #f1faee;
+  text-align: center;
+}
+
+.calc-box {
+  background-color: #a8dadc;
+  width: 90%;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  line-height: 36px;
+}
+
+input {
+  display: block;
+  flex: 1 1 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding-left: 1rem;
+}
+
+label {
+  display: block;
+  background-color: #457b9d;
+  flex: 1 1 0;
+  padding-left: 0.75rem;
+  color: #f1faee;
+  font-weight: 600;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 150px;
+  background-color: #e63946;
+  font-size: 24px;
+  color: #f1faee;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 15px;
+  margin: 0 auto;
+  transition: 0.2s ease-out;
+}
+
+button:hover {
+  opacity: 0.8;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+.revenue {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.expenses {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.oh-rate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.result-box {
+  flex: 1 1 0;
+  height: 35px;
+  color: #f1faee;
+  font-weight: 800;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  border: 1px solid black;
+  background-color: #536570;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.gross-profit {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.gross-profit label {
+  padding-top: 0.5rem;
+}
+
+.gross-margin {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.gross-margin label {
+  padding-top: 0.5rem;
+}
+
+.oh-expense {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.oh-expense label {
+  padding-top: 0.5rem;
+}
+
+.net-profit {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.net-profit label {
+  padding-top: 0.5rem;
+}
+
+.net-margin {
+  display: flex;
+}
+.net-margin label {
+  padding-top: 0.5rem;
+}
+
+.payout-box {
+  background-color: #a32647;
+  width: 100%;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.sales-commission {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.sales-commission label {
+  padding-top: 0.5rem;
+}
+
+.pm-fee {
+  display: flex;
+}
+.pm-fee label {
+  padding-top: 0.5rem;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TSS Commission and PM Fee Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="page_container">
+      <h1 class="page-title">Total Security Solutions</h1>
+      <h2 class="page-subtitle">Commission and PM Fee Calculator</h2>
+      <div class="calc-box">
+        <h2>Project Financial Information</h2>
+        <form>
+          <div class="revenue">
+            <label for="revenue">Project Revenue: </label>
+            <input
+              type="text"
+              id="revenue"
+              name="revenue"
+              placeholder="ex. 18465"
+            />
+          </div>
+          <div class="expenses">
+            <label for="expenses">Total Expenses: </label>
+            <input
+              type="text"
+              id="expenses"
+              name="expenses"
+              placeholder="ex. 10875"
+            />
+          </div>
+          <div class="oh-rate">
+            <label for="oh-rate">O.H. Rate: </label>
+            <input
+              type="text"
+              id="oh-rate"
+              name="oh-rate"
+              placeholder="ex. 25"
+            />
+          </div>
+        </form>
+      </div>
+      <button class="calculate">Calculate</button>
+      <div class="calc-box">
+        <div class="gross-profit">
+          <label>Gross Profit:</label>
+          <div class="result-box gp-result"></div>
+        </div>
+        <div class="gross-margin">
+          <label>Gross Margin:</label>
+          <div class="result-box gm-result"></div>
+        </div>
+        <div class="oh-expense">
+          <label>O.H. Expense:</label>
+          <div class="result-box oh-exp-result"></div>
+        </div>
+        <div class="net-profit">
+          <label>Net Profit:</label>
+          <div class="result-box net-prof-result"></div>
+        </div>
+        <div class="net-margin">
+          <label>Net Margin:</label>
+          <div class="result-box net-marg-result"></div>
+        </div>
+      </div>
+      <div class="payout-box">
+        <div class="sales-commission">
+          <label>Sales Commission:</label>
+          <div class="result-box sc-result"></div>
+        </div>
+        <div class="pm-fee">
+          <label>PM Fee:</label>
+          <div class="result-box pm-fee-result"></div>
+        </div>
+      </div>
+      <button class="reset" onClick="window.location.reload()">Reset</button>
+    </div>
+  </body>
+</html>
