@@ -15,15 +15,28 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #1d3557;
+  background: url("images/background_img-small.jpg") no-repeat top center fixed;
+  background-size: cover;
 }
 
 .page-container {
-  width: 428px;
+  width: 400px;
   margin: auto;
-  background-color: #1d3557;
-  padding: 3rem 1.5rem;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem 0.5rem;
   position: relative;
+}
+
+/* #Will use JS to turn on this class. */
+.background-off {
+  background: none;
+  box-shadow: none;
+  border: none;
+  backdrop-filter: none;
 }
 
 .page-title {
@@ -130,12 +143,15 @@ button:hover {
 .result-container {
   margin: 0;
   padding: 1rem;
-  background-color: #1d3557;
-  backdrop-filter: blur(6px);
+  /* background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18); */
   position: absolute;
-  width: 403px;
-  top: 10%;
-  left: 2%;
+  width: 400px;
+  top: 0%;
+  left: 0%;
   border-radius: 15px;
 }
 
@@ -154,7 +170,7 @@ button:hover {
 
 .calc-box-result {
   background-color: #a7dadc;
-  width: 90%;
+  width: 100%;
   margin: 3rem auto;
   padding: 1.5rem;
   border-radius: 10px;
@@ -229,10 +245,16 @@ button:hover {
     display: block;
   }
 
+  body {
+    background: url("images/background_img-small.jpg") no-repeat top center
+      fixed;
+    background-size: cover;
+  }
+
   .page-container {
     display: flex;
-    width: 1000px;
-    max-width: 1200px;
+    width: 80%;
+    min-width: 1007px;
     justify-content: space-around;
     align-items: flex-start;
     gap: 10%;
