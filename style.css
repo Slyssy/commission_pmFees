@@ -254,7 +254,7 @@ button:hover {
   .page-container {
     display: flex;
     width: 80%;
-    min-width: 1007px;
+    /* min-width: 1007px; */
     justify-content: space-around;
     align-items: flex-start;
     gap: 10%;
@@ -271,9 +271,5 @@ button:hover {
     padding: 0;
     flex: 0 1 50%;
     /* width: 100%; */
-  }
-
-  .calc-box {
-    width: 100%;
   }
 }
