@@ -15,6 +15,7 @@ const pmFeeResult = document.querySelector(".pm-fee-result");
 const resetButton = document.querySelector(".reset");
 const resultContainer = document.querySelector(".result-container");
 const pageContainer = document.querySelector(".page-container");
+const calcBox = document.querySelector(".calc-box");
 
 const showResults = function (event) {
   //   event.preventDefault();
@@ -48,6 +49,7 @@ calcButton.addEventListener("click", function (event) {
 
   calcButton.classList.add("hidden");
   pageContainer.classList.add("background-off");
+  calcBox.classList.add("hidden");
 
   showResults();
 });
