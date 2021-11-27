@@ -23,7 +23,7 @@ and Javascript.
 
 ## Screenshot Desktop View
 
-<img src="images/screenshot-desktop.png" width="900">
+<img src="images/screenshot_desktop.png" width="900">
 <br><br>
 
 ### Background Image:
