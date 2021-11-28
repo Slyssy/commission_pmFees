@@ -281,3 +281,106 @@ button:hover {
     /* width: 100%; */
   }
 }
+
+/* !Invoice Styling */
+#invoice-body {
+  background: none;
+}
+
+.invoice-container {
+  width: 1000px;
+  height: 1390px;
+  margin: 50px auto;
+  background-color: #f5eedf;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 160px;
+  padding: 50px;
+}
+.invoice-name {
+  font-size: 26px;
+  color: rgb(1, 23, 82);
+  margin: 0;
+  align-self: center;
+}
+
+.invoice-title {
+  font-size: 50px;
+  color: rgb(1, 23, 82);
+}
+
+.comp-inv-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.contact-info {
+  font-size: 18px;
+  color: rgb(1, 23, 82);
+}
+.flex-container {
+  display: flex;
+}
+
+.date-number p {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(1, 23, 82);
+}
+
+.invoice-date {
+  width: auto;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.bill-to {
+  padding: 20px 50px;
+  font-size: 26px;
+  color: white;
+  background-color: rgb(1, 23, 82);
+}
+
+.bill-to-info {
+  font-size: 18px;
+  color: rgb(1, 23, 82);
+  padding: 30px 50px;
+}
+
+.description-border {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(1, 23, 82);
+  color: white;
+  font-size: 22px;
+}
+
+.border-right {
+  border-right: 1px solid white;
+}
+
+.job-description {
+  flex-basis: 30%;
+  justify-self: auto;
+}
+
+.job-number {
+  /* flex-basis: 1.5; */
+}
+
+.sales-commission-charge {
+  /* flex-basis: 1.5; */
+}
+
+.pm-fee-charge {
+  /* flex-basis: 1.5; */
+}
+
+.line-total {
+  /* flex-basis: 1.5; */
+}

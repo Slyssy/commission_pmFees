@@ -22,10 +22,6 @@ const showResults = function (event) {
   resultContainer.classList.remove("hidden");
 };
 
-const resetResults = function (event) {
-  resultContainer.classList.add("hidden");
-};
-
 calcButton.addEventListener("click", function (event) {
   event.preventDefault();
   const projectRevenue = inputRevenue.value;

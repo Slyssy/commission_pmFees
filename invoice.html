@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prepare Invoice</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="invoice.js"></script>
+  </head>
+  <body id="invoice-body">
+    <div class="invoice-container">
+      <header>
+        <h2 class="invoice-name">Stephen Lyssy: Sales and PM Services</h2>
+        <h1 class="invoice-title">INVOICE</h1>
+      </header>
+      <section class="comp-inv-details">
+        <h5 class="contact-info">
+          1523 Founders Park<br />
+          New Braunfels, TX 78132<br /><br />
+          Phone: (512) 492-2659<br />
+          email: stephen@tss-tx.com
+        </h5>
+        <div class="date-number">
+          <div class="flex-container">
+            <p>Date:</p>
+            <p class="invoice-date"></p>
+          </div>
+          <div class="flex-container">
+            <p class="invoice-number">Invoice #:</p>
+            <p class="invoice-number"></p>
+          </div>
+        </div>
+      </section>
+      <h3 class="bill-to">Bill To:</h3>
+      <h5 class="bill-to-info">
+        Total Security Soulutions<br />
+        19141 Stone Oak Pkwy #104<br />
+        San Antonio, TX 78258<br />
+        Phone: 210-802-8476
+      </h5>
+      <div class="description-border">
+        <div class="job-description border-right">Job Name/Description</div>
+        <div class="job-number border-right">Job #</div>
+        <div class="sales-commission-charge border-right">Sales Commission</div>
+        <div class="pm-fee-charge border-right">PM Fee</div>
+        <div class="line-total">Total</div>
+      </div>
+    </div>
+  </body>
+</html>
