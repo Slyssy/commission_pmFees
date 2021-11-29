@@ -289,7 +289,7 @@ button:hover {
 
 .invoice-container {
   width: 1000px;
-  height: 1390px;
+  height: 1270px;
   margin: 50px auto;
   background-color: #f5eedf;
 }
@@ -340,6 +340,7 @@ header {
 
 .bill-to {
   padding: 20px 50px;
+  margin: 0 20px;
   font-size: 26px;
   color: white;
   background-color: rgb(1, 23, 82);
@@ -350,37 +351,67 @@ header {
   color: rgb(1, 23, 82);
   padding: 30px 50px;
 }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin: 20px 50px 34px 50px;
+}
 
-.description-border {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  height: 34px;
+}
+
+th {
+  background-color: rgb(1, 23, 82);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.table-job-num {
+  width: 150px;
+}
+
+.table-sale-comm {
+  width: 120px;
+}
+
+.table-pm-fee {
+  width: 120px;
+}
+
+.table-footer {
   background-color: rgb(1, 23, 82);
   color: white;
   font-size: 22px;
+  font-style: italic;
+  line-height: 28px;
+  width: 545px;
+  margin-left: 50px;
+  padding: 20px;
+  position: relative;
 }
 
-.border-right {
-  border-right: 1px solid white;
+.footer-total-text {
+  position: absolute;
+  background-color: rgb(1, 23, 82);
+  bottom: 0%;
+  right: -25%;
+  padding: 30px;
 }
 
-.job-description {
-  flex-basis: 30%;
-  justify-self: auto;
-}
-
-.job-number {
-  /* flex-basis: 1.5; */
-}
-
-.sales-commission-charge {
-  /* flex-basis: 1.5; */
-}
-
-.pm-fee-charge {
-  /* flex-basis: 1.5; */
-}
-
-.line-total {
-  /* flex-basis: 1.5; */
+.footer-total {
+  position: absolute;
+  background-color: rgb(1, 23, 82);
+  width: 240px;
+  bottom: 0%;
+  right: -65%;
+  padding: 30px;
 }

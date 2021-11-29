@@ -49,3 +49,12 @@ calcButton.addEventListener("click", function (event) {
 
   showResults();
 });
+
+// # Adding a the date to the date field on the invoice.
+const invoiceDate = document.querySelector(".invoice-date");
+
+const options = { month: "long", day: "numeric", year: "numeric" };
+const date = new Date();
+const today = date.toLocaleDateString("en-US", options);
+
+invoiceDate.textContent = `${today}`;
