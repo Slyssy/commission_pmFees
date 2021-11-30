@@ -19,6 +19,10 @@ body {
   background-size: cover;
 }
 
+.background-off {
+  background: none;
+}
+
 .page-container {
   width: 400px;
   margin: auto;
@@ -31,7 +35,7 @@ body {
   position: relative;
 }
 
-/* #Will use JS to turn on this class. */
+/* #Will use JS to turn on this classes. */
 .background-off {
   background: none;
   box-shadow: none;
@@ -83,6 +87,20 @@ input {
 input[type="text"] {
   width: 100%;
   padding-left: 1rem;
+}
+
+#enter-job {
+  height: 32px;
+  width: 80%;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+#enter-job-number {
+  height: 32px;
+  width: 80%;
+  border-radius: 5px;
+  margin: 20px auto 0 auto;
 }
 
 label {
@@ -141,6 +159,10 @@ button:hover {
   display: none;
 }
 
+.hide {
+  display: none;
+}
+
 .result-container {
   margin: 0;
   padding: 1rem;
@@ -151,7 +173,7 @@ button:hover {
   border: 1px solid rgba(255, 255, 255, 0.18); */
   position: absolute;
   width: 400px;
-  top: 0%;
+  top: 30%;
   left: 0%;
   border-radius: 15px;
 }
@@ -172,7 +194,7 @@ button:hover {
 .calc-box-result {
   background-color: #171b1b8a;
   width: 100%;
-  margin: 3rem auto;
+  margin: 4.5rem auto;
   padding: 1.5rem;
   border-radius: 10px;
 }
@@ -243,43 +265,12 @@ button:hover {
   background-color: #685cd1d3;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .hidden {
-    display: block;
-  }
+.invoice-reset {
+  display: flex;
+}
 
-  body {
-    background: url("images/background_img-small.jpg") no-repeat top center
-      fixed;
-    background-size: cover;
-  }
-
-  .page-title {
-    font-size: 40px;
-  }
-
-  .page-container {
-    display: flex;
-    width: 80%;
-    /* min-width: 1007px; */
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 10%;
-  }
-
-  .financial-entry {
-    margin: 0;
-    padding: 0;
-    flex: 0 1 50%;
-  }
-  .result-container {
-    position: static;
-    margin: 0;
-    padding: 0;
-    flex: 0 1 50%;
-    /* width: 100%; */
-  }
+.generate-invoice {
+  width: 200px;
 }
 
 /* !Invoice Styling */
@@ -292,6 +283,7 @@ button:hover {
   height: 1270px;
   margin: 50px auto;
   background-color: #f5eedf;
+  /* display: none; */
 }
 
 header {
@@ -336,6 +328,13 @@ header {
   width: auto;
   height: 30px;
   margin-left: 10px;
+}
+
+.invoice-number {
+  border: none;
+  background-color: inherit;
+  color: rgb(1, 23, 82);
+  font-size: 18px;
 }
 
 .bill-to {
@@ -414,4 +413,49 @@ tr:nth-child(even) {
   bottom: 0%;
   right: -65%;
   padding: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .hidden {
+    display: block;
+  }
+
+  body {
+    background: url("images/background_img-small.jpg") no-repeat top center
+      fixed;
+    background-size: cover;
+  }
+
+  .page-title {
+    font-size: 40px;
+  }
+
+  .page-container {
+    display: flex;
+    width: 80%;
+    /* min-width: 1007px; */
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .financial-entry {
+    margin: 0;
+    padding: 0;
+    flex: 0 1 50%;
+  }
+  .result-container {
+    position: static;
+    margin: 0;
+    padding: 0;
+    flex: 0 1 50%;
+    /* width: 100%; */
+  }
 }

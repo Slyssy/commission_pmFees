@@ -17,6 +17,16 @@
     <h2 class="page-subtitle">Commission and PM Fee Calculator</h2>
     <div class="page-container">
       <div class="financial-entry">
+        <div class="job-name">
+          <input type="text" id="enter-job" placeholder="Enter Job Name" />
+        </div>
+        <div class="job-number">
+          <input
+            type="text"
+            id="enter-job-number"
+            placeholder="Enter Job Number"
+          />
+        </div>
         <div class="calc-box">
           <h2>Enter Project Financials</h2>
           <form>
@@ -85,11 +95,16 @@
             <div class="result-box pm-fee-result"></div>
           </div>
         </div>
-        <button class="reset" onClick="window.location.reload()">Reset</button>
+        <div class="invoice-reset">
+          <button class="generate-invoice">Create Invoice</button>
+          <button class="reset" onClick="window.location.reload()">
+            Reset
+          </button>
+        </div>
       </div>
     </div>
     <div id="invoice-body">
-      <div class="invoice-container">
+      <div class="invoice-container hide">
         <header>
           <h2 class="invoice-name">Stephen Lyssy: Sales and PM Services</h2>
           <h1 class="invoice-title">INVOICE</h1>
@@ -108,7 +123,8 @@
             </div>
             <div class="flex-container">
               <p class="invoice-number">Invoice #:</p>
-              <p class="invoice-number"></p>
+              <input type="text" class="invoice-number" />
+              <!-- <p class="invoice-number"></p> -->
             </div>
           </div>
         </section>
