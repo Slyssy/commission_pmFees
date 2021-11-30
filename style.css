@@ -19,6 +19,10 @@ body {
   background-size: cover;
 }
 
+.background-off {
+  background: none;
+}
+
 .page-container {
   width: 400px;
   margin: auto;
@@ -31,7 +35,7 @@ body {
   position: relative;
 }
 
-/* #Will use JS to turn on this class. */
+/* #Will use JS to turn on this classes. */
 .background-off {
   background: none;
   box-shadow: none;
@@ -83,6 +87,20 @@ input {
 input[type="text"] {
   width: 100%;
   padding-left: 1rem;
+}
+
+#enter-job {
+  height: 32px;
+  width: 80%;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+#enter-job-number {
+  height: 32px;
+  width: 80%;
+  border-radius: 5px;
+  margin: 20px auto 0 auto;
 }
 
 label {
@@ -141,6 +159,10 @@ button:hover {
   display: none;
 }
 
+.hide {
+  display: none;
+}
+
 .result-container {
   margin: 0;
   padding: 1rem;
@@ -151,7 +173,7 @@ button:hover {
   border: 1px solid rgba(255, 255, 255, 0.18); */
   position: absolute;
   width: 400px;
-  top: 0%;
+  top: 30%;
   left: 0%;
   border-radius: 15px;
 }
@@ -172,7 +194,7 @@ button:hover {
 .calc-box-result {
   background-color: #171b1b8a;
   width: 100%;
-  margin: 3rem auto;
+  margin: 4.5rem auto;
   padding: 1.5rem;
   border-radius: 10px;
 }
@@ -243,6 +265,158 @@ button:hover {
   background-color: #685cd1d3;
 }
 
+.invoice-reset {
+  display: flex;
+}
+
+.generate-invoice {
+  width: 200px;
+}
+
+/* !Invoice Styling */
+#invoice-body {
+  background: none;
+}
+
+.invoice-container {
+  width: 1000px;
+  height: 1220px;
+  margin: 50px auto;
+  background-color: #f5eedf;
+  /* display: none; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 160px;
+  padding: 50px;
+}
+.invoice-name {
+  font-size: 26px;
+  color: rgb(1, 23, 82);
+  margin: 0;
+  align-self: center;
+}
+
+.invoice-title {
+  font-size: 50px;
+  color: rgb(1, 23, 82);
+}
+
+.comp-inv-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.contact-info {
+  font-size: 18px;
+  color: rgb(1, 23, 82);
+}
+.flex-container {
+  display: flex;
+}
+
+.date-number p {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(1, 23, 82);
+}
+
+.invoice-date {
+  width: auto;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.invoice-number {
+  border: none;
+  background-color: inherit;
+  color: rgb(1, 23, 82);
+  font-size: 18px;
+}
+
+.bill-to {
+  padding: 20px 50px;
+  margin: 0 20px;
+  font-size: 26px;
+  color: white;
+  background-color: rgb(1, 23, 82);
+}
+
+.bill-to-info {
+  font-size: 18px;
+  color: rgb(1, 23, 82);
+  padding: 30px 50px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin: 20px 50px 10px 50px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  height: 34px;
+}
+
+th {
+  background-color: rgb(1, 23, 82);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.table-job-num {
+  width: 150px;
+}
+
+.table-sale-comm {
+  width: 120px;
+}
+
+.table-pm-fee {
+  width: 120px;
+}
+
+.table-footer {
+  background-color: rgb(1, 23, 82);
+  color: white;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 28px;
+  width: 545px;
+  margin-left: 50px;
+  padding: 20px;
+  position: relative;
+}
+
+.footer-total-text {
+  position: absolute;
+  background-color: rgb(1, 23, 82);
+  bottom: 0%;
+  right: -25%;
+  padding: 30px;
+}
+
+.footer-total {
+  position: absolute;
+  background-color: rgb(1, 23, 82);
+  width: 240px;
+  bottom: 0%;
+  right: -65%;
+  padding: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .hidden {
@@ -266,6 +440,10 @@ button:hover {
     justify-content: space-around;
     align-items: flex-start;
     gap: 10%;
+  }
+
+  .hide {
+    display: none;
   }
 
   .financial-entry {

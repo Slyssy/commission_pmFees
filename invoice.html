@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prepare Invoice</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="invoice.js"></script>
+  </head>
+  <body id="invoice-body">
+    <div class="invoice-container">
+      <header>
+        <h2 class="invoice-name">Stephen Lyssy: Sales and PM Services</h2>
+        <h1 class="invoice-title">INVOICE</h1>
+      </header>
+      <section class="comp-inv-details">
+        <h5 class="contact-info">
+          1523 Founders Park<br />
+          New Braunfels, TX 78132<br /><br />
+          Phone: (512) 492-2659<br />
+          email: stephen@tss-tx.com
+        </h5>
+        <div class="date-number">
+          <div class="flex-container">
+            <p>Date:</p>
+            <p class="invoice-date"></p>
+          </div>
+          <div class="flex-container">
+            <p class="invoice-number">Invoice #:</p>
+            <p class="invoice-number"></p>
+          </div>
+        </div>
+      </section>
+      <h3 class="bill-to">Bill To:</h3>
+      <h5 class="bill-to-info">
+        Total Security Soulutions<br />
+        19141 Stone Oak Pkwy #104<br />
+        San Antonio, TX 78258<br />
+        Phone: 210-802-8476
+      </h5>
+      <table>
+        <tr>
+          <th class="table-jnd">Job Name/Description</th>
+          <th class="table-job-num">Job #</th>
+          <th class="table-sale-comm">Sales Commission</th>
+          <th class="table-pm-fee">PM Fee</th>
+          <th class="table-total">Total</th>
+        </tr>
+        <tr>
+          <td class="first-job"></td>
+          <td class="first-job-number"></td>
+          <td class="first-sales-commission"></td>
+          <td class="first-pm-fee"></td>
+          <td class="first-total"></td>
+        </tr>
+        <tr>
+          <td class="second-job"></td>
+          <td class="second-job-number"></td>
+          <td class="second-sales-commission"></td>
+          <td class="second-pm-fee"></td>
+          <td class="second-total"></td>
+        </tr>
+        <tr>
+          <td class="third-job"></td>
+          <td class="third-job-number"></td>
+          <td class="third-sales-commission"></td>
+          <td class="third-pm-fee"></td>
+          <td class="third-total"></td>
+        </tr>
+        <tr>
+          <td class="fourth-job"></td>
+          <td class="fourth-job-number"></td>
+          <td class="fourth-sales-commission"></td>
+          <td class="fourth-pm-fee"></td>
+          <td class="fourth-total"></td>
+        </tr>
+        <tr>
+          <td class="fifth-job"></td>
+          <td class="fifth-job-number"></td>
+          <td class="fifth-sales-commission"></td>
+          <td class="fifth-pm-fee"></td>
+          <td class="fifth-total"></td>
+        </tr>
+        <tr>
+          <td class="sixth-job"></td>
+          <td class="sixth-job-number"></td>
+          <td class="sixth-sales-commission"></td>
+          <td class="sixth-pm-fee"></td>
+          <td class="sixth-total"></td>
+        </tr>
+        <tr>
+          <td class="seventh-job"></td>
+          <td class="seventh-job-number"></td>
+          <td class="seventh-sales-commission"></td>
+          <td class="seventh-pm-fee"></td>
+          <td class="seventh-total"></td>
+        </tr>
+        <tr>
+          <td class="eighth-job"></td>
+          <td class="eighth-job-number"></td>
+          <td class="eighth-sales-commission"></td>
+          <td class="eighth-pm-fee"></td>
+          <td class="eighth-total"></td>
+        </tr>
+        <tr>
+          <td class="nineth-job"></td>
+          <td class="nineth-job-number"></td>
+          <td class="nineth-sales-commission"></td>
+          <td class="nineth-pm-fee"></td>
+          <td class="nineth-total"></td>
+        </tr>
+      </table>
+      <div class="table-footer">
+        <p>
+          Make all Checks Payable to Stephen Lyssy <br /><br />
+          If you have any questions concerning this invoice, contact Stephen
+          Lyssy at stephen@tss-tx.com. <br /><br />
+          Thank you for your business!
+        </p>
+        <div class="footer-total-text">TOTAL</div>
+        <div class="footer-total">$</div>
+      </div>
+    </div>
+  </body>
+</html>
