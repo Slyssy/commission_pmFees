@@ -280,7 +280,7 @@ button:hover {
 
 .invoice-container {
   width: 1000px;
-  height: 1270px;
+  height: 1220px;
   margin: 50px auto;
   background-color: #f5eedf;
   /* display: none; */
@@ -354,7 +354,7 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 90%;
-  margin: 20px 50px 34px 50px;
+  margin: 20px 50px 10px 50px;
 }
 
 td,
